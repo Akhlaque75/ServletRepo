@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+ 
+ <!-- <welcome-file-list>
+   <welcome-file>singup.jsp</welcome-file>
+</welcome-file-list>
+ -->
+<servlet>
+<servlet-name>project</servlet-name>
+<servlet-class>com.Controller.Register</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>project</servlet-name>
+<url-pattern>/RegisterDemo</url-pattern>
+
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>S1</servlet-name>
+<servlet-class>com.pack.Servlet1</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>S1</servlet-name>
+<url-pattern>/sr</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>S2</servlet-name>
+<servlet-class>com.pack.Servlet2</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>S2</servlet-name>
+<url-pattern>/servlet2</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+ <!-- <servlet>
+ <servlet-name>e1</servlet-name>
+ <servlet-class>com.servlet.Myservlet</servlet-class>
+ </servlet> -->
+ 
+ <servlet>
+ <servlet-name>register</servlet-name>
+ <servlet-class>com.servlet.RegisterServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+ <servlet-name>success</servlet-name>
+<servlet-class>com.servlet.SuccessServlet</servlet-class> 
+ </servlet>
+ 
+  <servlet-mapping>
+  <servlet-name>register</servlet-name>
+  <url-pattern>/RegisterServlet</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet-mapping>
+  <servlet-name>success</servlet-name>
+  <url-pattern>/success</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <!-- <servlet-mapping>
+ <servlet-name>myservlet</servlet-name>
+ <url-pattern>/myservlet</url-pattern>
+ </servlet-mapping>
+  -->
+<!--  <session-config>
+ <session-timeout>30</session-timeout>
+ 
+ </session-config> -->
+</web-app>
